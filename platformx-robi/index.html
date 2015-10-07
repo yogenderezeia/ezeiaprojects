@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+  <title>Meet ROBi</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
+  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/animate.css/animate.css">
+  <link rel="stylesheet" href="vendor/Morphext/dist/morphext.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="../../../yourdomain.comfeed.xml" />
+    <link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
+
+    <script src="js/modernizr.custom.17475.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Carousel2-->
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--<a class="navbar-brand" href="#"><span><span class="blue">Platform</span>X</span>  Intelligent Cyber Investing</a>-->
+        <!--<a class="navbar-brand" href="index.html">Kuvera</a>-->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo31.png" alt=""/>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#why">Why Kuvera</a></li>
+          <li>
+              <!--<a href="#more">Investment guide</a>-->
+              <div class="dropdown">
+                  <a href="investment.html" class="btn btn-default dropdown-toggle">
+                      Investment guide
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="investment.html">Online Investing</a></li>
+                      <li><a href="overview.html">Investing Overview</a></li>
+                      <li><a href="how-invest.html">How we invest</a></li>
+                      <li><a href="general.html">General investing</a></li>
+                      <li><a href="etf.html">ETFs</a></li>
+                      <li><a href="retirement.html">Retirement Guide</a></li>
+                      <li><a href="faq.html">FAQs</a></li>
+                      <li><a href="news.html">Money News</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+              <div class="dropdown">
+                  <a href="story.html" class="btn btn-default dropdown-toggle">
+                      About us
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="story.html">Our story</a></li>
+                      <li><a href="security.html">Security</a></li>
+                      <!--<li><a href="team.html">Our team</a></li>-->
+                      <li><a href="contact.html">Contact us</a></li>
+                      <li><a href="loyalty.html">Loyalty Bonus</a></li>
+                      <li><a href="refer.html">Refer a Friend</a></li>
+                  </ul>
+              </div>
+          </li>
+            <li>
+                <!--<a href="#more">Investment guide</a>-->
+                <div class="dropdown">
+                    <a href="pension.html" class="btn btn-default dropdown-toggle">
+                        Pensions
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pension.html">Personal Pensions</a></li>
+                        <li><a href="super.html">Superannuation</a></li>
+                    </ul>
+                </div>
+            </li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><button class="btn navbar-btn btn-default red">Sign In</button></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <section class="hero">
+    <canvas id="canvas2"></canvas>
+    <div class="container title text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <!--<h3>“Hi, I’m <b>ROB</b><span class="lucida bigger">I</span>, <br/>your intelligent investor”</h3>-->
+                <h3>“Hi, I’m <b>Yogi</b>, <br/>your intelligent investor”</h3>
+                <p class="light">Kuvera uses <b>Yogi</b> to make investing easier for everyone...</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-link btn-lg pull-right"><i class="fa fa-play-circle-o"></i> Watch video</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="onboarding.html" class="btn btn-default btn-lg white pull-left">Try Yogi now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="email text-center">
+    <div class="container">
+        <h1>The brighter way to invest</h1>
+        <p class="red bold mbm">Sign up to our email to get our exclusive offers and news.</p>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <input class="pull-left" type="text" placeholder="Your email here..."/>
+                <button class="btn btn-default btn-lg pull-left">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why2 bg-gray" id="why">
+    <div class="container">
+        <h1 class="mbl">Why Kuvera</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="icons">
+                    <div class="icon icon-px-05"></div>
+                </div>
+                <h3 class="helvetica-title mbm red">Low Fees</h3>
+                <p class="mbl">More of your money works for you.</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="icons">
+                    <div class="icon icon-px-02"></div>
+                </div>
+                <h3 class="helvetica-title mbm red">Simple</h3>
+                <p class="mbl">Set up an account in just a few minutes</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="icons">
+                    <div class="icon icon-px-08"></div>
+                </div>
+                <h3 class="helvetica-title mbm red">Anywhere</h3>
+                <p class="mbl">Access your portfolio on any device, and add or take out money instantly
+                </p>
+            </div>
+        </div>
+        <div class="row smooth">
+            <div class="col-sm-4">
+                <a href="fees.html" class="btn btn-default btn-lg">Learn more about fees</a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#yogi" class="btn btn-default btn-lg">See how Yogi works</a>
+            </div>
+            <div class="col-sm-4">
+                <a href="onboarding.html" class="btn btn-default btn-lg">Get started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="why" id="why">-->
+    <!--<div class="container">-->
+        <!--<h1 class="white mbl">Why Kuvera</h1>-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-4">-->
+                <!--<div class="icons">-->
+                    <!--<div class="icon icon-px-05"></div>-->
+                <!--</div>-->
+                <!--<h3 class="helvetica-title mbm">Low Fees</h3>-->
+                <!--<p class="mbl">More of your money works for you.</p>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4">-->
+                <!--<div class="icons">-->
+                    <!--<div class="icon icon-px-02"></div>-->
+                <!--</div>-->
+                <!--<h3 class="helvetica-title mbm">Simple</h3>-->
+                <!--<p class="mbl">Set up an account in just a few minutes</p>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4">-->
+                <!--<div class="icons">-->
+                    <!--<div class="icon icon-px-08"></div>-->
+                <!--</div>-->
+                <!--<h3 class="helvetica-title mbm">Anywhere</h3>-->
+                <!--<p class="mbl">Access your portfolio on any device, and add or take out money instantly-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row smooth">-->
+            <!--<div class="col-sm-4">-->
+                <!--<a href="fees.html" class="btn btn-inverse btn-lg">Learn more about fees</a>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4">-->
+                <!--<a href="#yogi" class="btn btn-inverse btn-lg">See how ROBi works</a>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4">-->
+                <!--<a href="onboarding.html" class="btn btn-inverse btn-lg">Get started</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<section class="yogi" id="yogi">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>How <b>Yogi</b> works</h1>
+                        <p class="mbl"><b>Yogi</b> is our investment sage - a smart trading expert that will do everything for you and send you a message if you need to know something specific. </p>
+                        <h3>Relax, <b>Yogi</b>’s on the case…</h3>
+                        <p><b>Yogi</b> will help you set up your <strong class="blue">portfolio</strong> and, as he’s always awake, will constantly monitor and rebalance it for you.  Let <b>Yogi</b></b> take over and keep you up-dated, and remember, you can check on your investment performance 24/7 or withdraw money at any time.</p>
+                    </div>
+
+                    <div class="col-sm-6 text-center">
+                        <div class="signal-box">
+                            <div class="wave">
+                                <canvas id="canvas4"></canvas>
+                            </div>
+                        </div>
+                        <a href="onboarding.html" class="btn btn-default btn-wide btn-lg mtl">Try Yogi now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="item">
+        <div class="container text-center">
+            <h1>Let <b>Yogi</b> work for you</h1>
+            <p class="col-md-8 col-md-offset-2">Simply pop in a few details such as how much you want to invest and why and <b>Yogi</b> will create a tailored investment portfolio for you.</p>
+            <div class="row mbl">
+                <div class="col-sm-3">
+                    <div class="icons">
+                        <div class="icon icon-px-06"></div>
+                    </div>
+                    <h3 class="red mbm">General investing</h3>
+                    <span>Money you want to grow for future needs</span>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icons">
+                        <div class="icon icon-px-07"></div>
+                    </div>
+                    <h3 class="red mbm">Regular saving</h3>
+                    <span>Money for your regular saving.</span>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icons">
+                        <div class="icon icon-px-10"></div>
+                    </div>
+                    <h3 class="red mbm">Education</h3>
+                    <span>Money for your children's future.</span>
+                </div>
+                <div class="col-sm-3">
+                    <div class="icons">
+                        <div class="icon icon-px-04"></div>
+                    </div>
+                    <h3 class="red mbm">Retirement</h3>
+                    <span>Money to live on when you stop working</span>
+                </div>
+            </div>
+            <a href="onboarding.html" class="btn btn-default btn-wide btn-lg mbs">Try Yogi now</a>
+        </div>
+      </div>
+
+        <div class="item text-center">
+            <div class="container">
+                <h1>Why use <b>Yogi</b>?</h1>
+                <p><b>ROB<span class="red">i</span></b> saves you time and money and intelligently monitors and maximises your investment portfolio around the clock. <b>Yogi</b> also keeps the cost of investing down by using ETFs so you hold on to more of your money.</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="icons">
+                            <div class="icon icon-px-01"></div>
+                        </div>
+                        <h3 class="red">Save Time</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icons">
+                            <div class="icon icon-px-06"></div>
+                        </div>
+                        <h3 class="red">Save Money with No Hidden Charges</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icons">
+                            <div class="icon icon-px-09"></div>
+                        </div>
+                        <h3 class="red">Smarter ETF investing</h3>
+                    </div>
+                </div>
+                <div class="row mbl">
+                    <div class="col-sm-4">
+                        <span>Quick and easy</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span>A cheaper management fee as low as .4%</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span>Low cost for better returns</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="onboarding.html" class="btn btn-default btn-lg btn-wide">Try ROBi now</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="text-center mbm">
+                    <h1><b>Yogi</b>’s Money News</h1>
+                    <h3 class="red"><b>Yogi</b> says... <span>‘Look at market fluctuations as your friend rather than your enemy – and take the long view for sustainable returns’</span></h3>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/news1.jpg" alt="news"/>
+                        <h4>News feed story 1</h4>
+                        <p>Portland street art iPhone food truck, Vice listicle heirloom cliche. Freegan Thundercats chambray, single-origin coffee...</p>
+                        <a href="news-detail.html">Read more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/news2.jpg" alt="news"/>
+                        <h4>News feed story 2</h4>
+                        <p>Portland street art iPhone food truck, Vice listicle heirloom cliche. Freegan Thundercats chambray, single-origin coffee...</p>
+                        <a href="news-detail.html">Read more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="img/news3.jpg" alt="news"/>
+                        <h4>News feed story 3</h4>
+                        <p>Portland street art iPhone food truck, Vice listicle heirloom cliche. Freegan Thundercats chambray, single-origin coffee...</p>
+                        <a href="news-detail.html">Read more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section class="more bg-gray" id="more">
+  <div class="container">
+    <h1 class="text-center mbl">Kuvera investing guide</h1>
+
+    <div class="row">
+        <ul id="carousel" class="elastislide-list">
+            <li>
+                <a href="etf.html">
+                    <img src="img/small/1.jpg" alt="image01" />
+                    <div class="overlay">
+                        <span>About ETFs</span>
+                        <span>About ETFs</span>                    </div>
+                </a>            </li>
+            <li><a href="how-invest.html"><img src="img/small/2.jpg" alt="image02" />
+                <div class="overlay">
+                    <span>How we invest</span>
+                    <span>How we invest</span>                </div>
+            </a></li>
+            <li><a href="fees.html"><img src="img/small/3.jpg" alt="image03" />
+                <div class="overlay">
+                    <span>Fee calculator</span>
+                    <span>Fee calculator</span>                </div>
+            </a></li>
+            <li><a href="faq.html"><img src="img/small/4.jpg" alt="image04" />
+                <div class="overlay">
+                    <span>FAQs</span>
+                    <span>FAQs</span>                </div>
+            </a></li>
+            <li><a href="refer.html"><img src="img/small/5.jpg" alt="image05" />
+                <div class="overlay">
+                    <span>Refer a friend</span>
+                    <span>Refer a friend</span>                </div>
+            </a></li>
+            <li><a href="loyalty.html"><img src="img/small/6.jpg" alt="image06" />
+                <div class="overlay">
+                    <span>Loyalty bonus</span>
+                    <span>Loyalty bonus</span>                </div>
+            </a></li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<script src="js/wave.js"></script>
+
+      </div>
+    </div>
+
+    <footer>
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <p class="warning">With investments, your capital is at risk. The value of your portfolio with Kuvera can go down as well as up and you may get back less than you invest.
+                <a href="#">Learn more <i class="fa fa-angle-right"></i></a>
+            </p>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="img/logo.png" alt="" class="img-responsive"/>
+                </div>
+                <div class="col-md-4 col-sm-9">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul>
+                                <li><a href="overview.html">Overview</a></li>
+                                <li><a href="news.html">Latest news</a></li>
+                                <li><a href="files/PX%20T%26Cs.pdf" target="_blank">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul>
+                                <li><a href="story.html">Our story</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="security.html">Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <span class="social">
+                        <i class="fa fa-facebook"></i>                    </span>
+                    <span class="social">
+                        <i class="fa fa-twitter"></i>                    </span>
+                    <span class="social">
+                        <i class="fa fa-linkedin"></i>                    </span>                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  </body>
+
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/Morphext/dist/morphext.min.js"></script>
+<!--<script src="vendor/headroom.js/dist/jQuery.headroom.min.js"></script>-->
+<!--<script src="vendor/headroom.js/dist/headroom.min.js"></script>-->
+<script src="vendor/prefixfree/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/etf-chart.js"></script>
+
+<script>
+//    $("header").headroom({
+//        offset : 70
+//    });
+//
+//    jQuery(document).ready(function($) {
+//        $(".js-rotating").Morphext({
+//            // The [in] animation type. Refer to Animate.css for a list of available animations.
+//            animation: "fadeIn",
+//            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+//            separator: ",",
+//            // The delay between the changing of each phrase in milliseconds.
+//            speed: 4000,
+//            complete: function () {
+//                // Called after the entrance animation is executed.
+//            }
+//        });
+//    });
+    (function() {
+
+        $(".panel").on("show.bs.collapse hide.bs.collapse", function(e) {
+            if (e.type=='show'){
+                $(this).addClass('active');
+            }else{
+                $(this).removeClass('active');
+            }
+        });
+
+    }).call(this);
+
+</script>
+</html>
